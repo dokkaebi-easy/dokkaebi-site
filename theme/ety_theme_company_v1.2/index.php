@@ -23,15 +23,15 @@ include_once(G5_THEME_PATH.'/head.php');
 	  <!-- Slide One - Set the background image for this slide in the line below -->
 	  <div class="carousel-item active" style="background-image: url('<?php echo G5_THEME_URL?>/img/background02.jpg')">
 		<div class="carousel-caption d-none d-md-block">
-		  <h3 class="ko1">에티테마 커뮤니티</h3>
-		  <p class="ko1 f20">에티테마에 오시면 커뮤니티형, 비즈니스형 두가지 모두 다운로드 하실 수 있습니다.</p>
+		  <h3 class="ko1">테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ</h3>
+		  <p class="ko1 f20">테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ</p>
 		</div>
 	  </div>
 	  <!-- Slide Two - Set the background image for this slide in the line below -->
 	  <div class="carousel-item" style="background-image: url('<?php echo G5_THEME_URL?>/img/background05.jpg')">
 		<div class="carousel-caption d-none d-md-block">
-		  <h3 class="ko1">반응형 비즈니스 테마</h3>
-		  <p class="ko1 f20">그누보드5.3 / 5.4 와 연동되어 사용가능한 테마 입니다.</p>
+		  <h3 class="ko1">테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ</h3>
+		  <p class="ko1 f20">테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ테스트아아ㅗㅇ남어나미러ㅏㅣㄴㅇㅁ러ㅏㅣㄴㅁㅇㄹ</p>
 		</div>
 	  </div>
 	  <!-- Slide Three - Set the background image for this slide in the line below -->
