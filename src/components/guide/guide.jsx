@@ -31,7 +31,12 @@ export default function Guide(props) {
       <Toolbar />
       <Divider />
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
+        {[
+          "설치하기전",
+          "Docker 설치",
+          "Dockerby 설치",
+          "Dockerby 지원 버전",
+        ].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>
               {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -42,14 +47,16 @@ export default function Guide(props) {
       </List>
       <Divider />
       <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+        {["회원가입/로그인", "프로젝트 생성", "프로젝트 배포"].map(
+          (text, index) => (
+            <ListItem button key={text}>
+              <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItem>
+          )
+        )}
       </List>
     </div>
   );
@@ -61,28 +68,6 @@ export default function Guide(props) {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <Navigation />
-      {/* <AppBar
-        position="fixed"
-        sx={{
-          width: { sm: `calc(100% - ${drawerWidth}px)` },
-          ml: { sm: `${drawerWidth}px` },
-        }}
-      >
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" noWrap component="div">
-            Responsive drawer
-          </Typography>
-        </Toolbar>
-      </AppBar> */}
       <Box
         component="nav"
         sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
