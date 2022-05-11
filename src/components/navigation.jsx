@@ -31,7 +31,7 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="/guide" className="page-scroll">
+              <a href="/beforeinstall" className="page-scroll">
                 설치 및 가이드
               </a>
             </li>
