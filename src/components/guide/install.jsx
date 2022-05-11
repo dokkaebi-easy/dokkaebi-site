@@ -1,38 +1,52 @@
 import styled from "@emotion/styled";
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';
 
 const Install = () => {
   return (
     <div>
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid item xs={6}>
-
-        <Step>Step 1 :</Step>
-        </Grid>
-        <Grid item xs={6}>
-          <div>접속한 EC2dp apt Packge 업데이트</div>
-        </Grid>
-
-      </Grid>
-      <div>
-      <Box component="span" sx={{ p: 2, border: '1px dashed grey' }}>
-        <Button>
-         $ sudo apt-get update
-        </Button>
-      </Box>
-      </div>
-
-      <Co>ㄴㅇㅁ러ㅏㅇ넘라ㅣㄴ엄라ㅣㄴㅇㅁ러ㅏㅣ</Co>
+      <H1>Dokerby 설치</H1>
+      <P1>dockerby에서는 8482 Port를 지정해서 사용하고 있습니다.</P1>
+      <P1>최신 버전 정보 `0.0.4`</P1>
+      <P1>해당 Docker Hub를 참고하시길 바랍니다.</P1>
+      <P1>
+        <a
+          href="https://hub.docker.com/r/edh1021/dockerby"
+          target="_blank"
+          rel="noreferrer"
+        >
+          https://hub.docker.com/r/edh1021/dockerby
+        </a>
+      </P1>
+      <Textbox>
+        sudo docker run -d -p 8482:80 -v
+        /var/run/docker.sock:/var/run/docker.sock -v
+        /usr/bin/docker:/usr/bin/docker -v /var/dockerby:/var/dockerby --name
+        dockerby edh1021/dockerby:0.0.4
+      </Textbox>
     </div>
   );
 };
 export default Install;
-const Co = styled.div
-  `font-size: 100px;`
-;
 
-const Step = styled.h1
-  `color: blue;`
-;
+const H1 = styled.h1`
+  background-color: 1976D2;
+  color: white;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+`;
+
+const Textbox = styled.div`
+  border: 1px solid black;
+  border-color: D9D9D9;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 16px;
+  color: 000099;
+  font-size: 18px;
+`;
+
+const P1 = styled.p`
+  font-size: 20px;
+  margin-top: 10px;
+`;

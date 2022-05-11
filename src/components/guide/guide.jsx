@@ -1,4 +1,5 @@
-import * as React from "react";
+import { useState } from "react";
+import styled from "@emotion/styled";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -15,12 +16,14 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Navigation } from "../navigation";
+import { Link, Outlet } from "react-router-dom";
+import ErrorIcon from "@mui/icons-material/Error";
 
 const drawerWidth = 240;
 
 export default function Guide(props) {
   const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
@@ -29,34 +32,40 @@ export default function Guide(props) {
   const drawer = (
     <div>
       <Toolbar />
-      <Divider />
+      <Divider style={{ background: "black" }} />
       <List>
         {[
-          "설치하기전",
-          "Docker 설치",
-          "Dockerby 설치",
-          "Dockerby 지원 버전",
-        ].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {["회원가입/로그인", "프로젝트 생성", "프로젝트 배포"].map(
-          (text, index) => (
-            <ListItem button key={text}>
+          { text: "설치하기전", url: "beforeinstall" },
+          { text: "Docker 설치", url: "dockerinstall" },
+          { text: "Dockerby 설치", url: "install" },
+          { text: "Dockerby 지원 버전", url: "version" },
+        ].map((list, index) => (
+          <StyledLink to={"/" + list.url}>
+            <ListItem button key={list.text}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
-              <ListItemText primary={text} />
+              <ListItemText primary={list.text} />
             </ListItem>
-          )
-        )}
+          </StyledLink>
+        ))}
+      </List>
+      <Divider style={{ background: "black" }} />
+      <List>
+        {[
+          { text: "회원가입/로그인", url: "login" },
+          { text: "프로젝트 생성", url: "create" },
+          { text: "프로젝트 배포", url: "distribute" },
+        ].map((list, index) => (
+          <StyledLink to={"/" + list.url}>
+            <ListItem button key={list.text}>
+              <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={list.text} />
+            </ListItem>
+          </StyledLink>
+        ))}
       </List>
     </div>
   );
@@ -115,36 +124,11 @@ export default function Guide(props) {
         }}
       >
         <Toolbar />
-        <Typography paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
-          dolor purus non enim praesent elementum facilisis leo vel. Risus at
-          ultrices mi tempus imperdiet. Semper risus in hendrerit gravida rutrum
-          quisque non tellus. Convallis convallis tellus id interdum velit
-          laoreet id donec ultrices. Odio morbi quis commodo odio aenean sed
-          adipiscing. Amet nisl suscipit adipiscing bibendum est ultricies
-          integer quis. Cursus euismod quis viverra nibh cras. Metus vulputate
-          eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo
-          quis imperdiet massa tincidunt. Cras tincidunt lobortis feugiat
-          vivamus at augue. At augue eget arcu dictum varius duis at consectetur
-          lorem. Velit sed ullamcorper morbi tincidunt. Lorem donec massa sapien
-          faucibus et molestie ac.
-        </Typography>
-        <Typography paragraph>
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est
-          ullamcorper eget nulla facilisi etiam dignissim diam. Pulvinar
-          elementum integer enim neque volutpat ac tincidunt. Ornare suspendisse
-          sed nisi lacus sed viverra tellus. Purus sit amet volutpat consequat
-          mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis
-          risus sed vulputate odio. Morbi tincidunt ornare massa eget egestas
-          purus viverra accumsan in. In hendrerit gravida rutrum quisque non
-          tellus orci ac. Pellentesque nec nam aliquam sem et tortor. Habitant
-          morbi tristique senectus et. Adipiscing elit duis tristique
-          sollicitudin nibh sit. Ornare aenean euismod elementum nisi quis
-          eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
-          posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
       </Box>
     </Box>
   );
 }
+
+const StyledLink = styled(Link)`
+  color: black;
+`;
