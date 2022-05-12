@@ -1,4 +1,8 @@
 @media screen and (max-width: 400px) {
+  body {
+    margin-bottom: 30px;
+  }
+
   #features {
     padding: 20px;
     width: 111%;

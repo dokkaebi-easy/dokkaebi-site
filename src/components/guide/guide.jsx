@@ -18,6 +18,7 @@ import Typography from "@mui/material/Typography";
 import { Navigation } from "../navigation";
 import { Link, Outlet } from "react-router-dom";
 import ErrorIcon from "@mui/icons-material/Error";
+import { Margin } from "@mui/icons-material";
 
 const drawerWidth = 240;
 
@@ -31,6 +32,7 @@ export default function Guide(props) {
 
   const drawer = (
     <div>
+      <Navigation />
       <Toolbar />
       <Divider style={{ background: "black" }} />
       <List>
@@ -45,7 +47,12 @@ export default function Guide(props) {
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
-              <ListItemText primary={list.text} />
+              <ListItemText
+                primary={list.text}
+                primaryTypographyProps={{
+                  fontSize: 14,
+                }}
+              />
             </ListItem>
           </StyledLink>
         ))}
@@ -62,7 +69,12 @@ export default function Guide(props) {
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
-              <ListItemText primary={list.text} />
+              <ListItemText
+                primary={list.text}
+                primaryTypographyProps={{
+                  fontSize: 14,
+                }}
+              />
             </ListItem>
           </StyledLink>
         ))}
@@ -76,10 +88,12 @@ export default function Guide(props) {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <Navigation />
       <Box
         component="nav"
-        sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
+        sx={{
+          width: { sm: drawerWidth },
+          flexShrink: { sm: 0 },
+        }}
         aria-label="mailbox folders"
       >
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
@@ -108,6 +122,7 @@ export default function Guide(props) {
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
+              my: 2.4,
             },
           }}
           open

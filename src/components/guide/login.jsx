@@ -17,27 +17,27 @@ const Login = () => {
       <img src="img/guide/login/02.png" alt="signup_view" />
 
       <P1>- ID 중복 확인, 이름 중복 확인을 통해 validation 체크해주세요.</P1>
-      <P1>- 인증키는 여러분의 프로젝트에 다른 사람으로부터 접근을 보호하기 위한 수단입니다.</P1>
-      <P1> dockerby 설치 후, 아래 명령어를 통해 출력된 AuthKey를 입력해주세요.</P1>
+      <P1>
+        - 인증키는 여러분의 프로젝트에 다른 사람으로부터 접근을 보호하기 위한
+        수단입니다.
+      </P1>
+      <P1>
+        {" "}
+        dockerby 설치 후, 아래 명령어를 통해 출력된 AuthKey를 입력해주세요.
+      </P1>
 
       <Textbox>
         # dockerby 컨테이너에 접속
+        <br></br>$ docker exec -it dockerby bash
         <br></br>
-        $ docker exec -it dockerby bash
-        <br></br>
-        <br></br>
-
-        # AuthKey출력 
-        <br></br>
-        $ cat AuthKey 
-        <br></br>
-        # 7c8c7b0a5a74482e9e9ba84444cc0f12MDIyOTU5Cg
+        <br></br># AuthKey출력
+        <br></br>$ cat AuthKey
+        <br></br># 7c8c7b0a5a74482e9e9ba84444cc0f12MDIyOTU5Cg
       </Textbox>
       <br></br>
 
       <P1>3. Dockerby 로그인</P1>
       <img src="img/guide/login/03.png" alt="login_view2" />
-
     </div>
   );
 };

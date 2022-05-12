@@ -16,6 +16,7 @@ const Install = () => {
           https://hub.docker.com/r/edh1021/dockerby
         </a>
       </P1>
+      <Span1>Install</Span1>
       <Textbox>
         sudo docker run -d -p 8482:80 -v
         /var/run/docker.sock:/var/run/docker.sock -v
@@ -33,6 +34,7 @@ const H1 = styled.h1`
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 30px;
 `;
 
 const Textbox = styled.div`
@@ -44,6 +46,11 @@ const Textbox = styled.div`
   margin-right: 16px;
   color: 000099;
   font-size: 18px;
+`;
+
+const Span1 = styled.span`
+  font-size: 32px;
+  color: 1976D2;
 `;
 
 const P1 = styled.p`
