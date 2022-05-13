@@ -125,10 +125,10 @@ const Create = () => {
               &nbsp; ㆍDump File Dir [선택] : 데이터베이스 덤프 파일 (테이블
               create ㆍ쿼리가 들어있는 sql파일이 있는 경로)
             </P1>
-            <P1>
+            <Colorbox>
               📢 각 DB마다 필요로 하는 항목이 다르므로 DB 선택에 따라 추가
               항목이 달라집니다.
-            </P1>
+            </Colorbox>
             <Img1 src={Img_i} alt="이미지없음" />
             <P1>
               &nbsp;{" "}
