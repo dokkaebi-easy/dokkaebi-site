@@ -79,3 +79,7 @@ const Textbox = styled.div`
   color: 000099;
   font-size: 18px;
 `;
+
+// const Footer = styled.div`
+//   padding-bottom: 100px;
+// `;

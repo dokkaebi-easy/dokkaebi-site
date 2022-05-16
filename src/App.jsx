@@ -1,4 +1,3 @@
-import Guide from "./components/guide/guide";
 import Home from "./components/home";
 import Layout from "./Layout";
 import Beforeinstall from "./components/guide/beforeinstall";

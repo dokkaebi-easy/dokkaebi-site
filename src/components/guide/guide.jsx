@@ -5,20 +5,23 @@ import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import MailIcon from "@mui/icons-material/Mail";
-import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Navigation } from "../navigation";
 import { Link, Outlet } from "react-router-dom";
-import ErrorIcon from "@mui/icons-material/Error";
-import { Margin } from "@mui/icons-material";
+import Filter1Icon from "@mui/icons-material/Filter1";
+import Filter2Icon from "@mui/icons-material/Filter2";
+import Filter3Icon from "@mui/icons-material/Filter3";
+import Filter4Icon from "@mui/icons-material/Filter4";
+import Filter5Icon from "@mui/icons-material/Filter5";
+import Filter6Icon from "@mui/icons-material/Filter6";
+import Filter7Icon from "@mui/icons-material/Filter7";
 
 const drawerWidth = 240;
 
@@ -41,11 +44,18 @@ export default function Guide(props) {
           { text: "Docker 설치", url: "dockerinstall" },
           { text: "Dockerby 설치", url: "install" },
           { text: "Dockerby 지원 버전", url: "version" },
-        ].map((list, index) => (
+        ].map((list) => (
           <StyledLink to={"/" + list.url}>
             <ListItem button key={list.text}>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {
+                  {
+                    beforeinstall: <Filter1Icon />,
+                    dockerinstall: <Filter2Icon />,
+                    install: <Filter3Icon />,
+                    version: <Filter4Icon />,
+                  }[list.url]
+                }
               </ListItemIcon>
               <ListItemText
                 primary={list.text}
@@ -63,11 +73,17 @@ export default function Guide(props) {
           { text: "회원가입/로그인", url: "login" },
           { text: "프로젝트 생성", url: "create" },
           { text: "프로젝트 배포", url: "distribute" },
-        ].map((list, index) => (
+        ].map((list) => (
           <StyledLink to={"/" + list.url}>
             <ListItem button key={list.text}>
               <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {
+                  {
+                    login: <Filter5Icon />,
+                    create: <Filter6Icon />,
+                    distribute: <Filter7Icon />,
+                  }[list.url]
+                }
               </ListItemIcon>
               <ListItemText
                 primary={list.text}

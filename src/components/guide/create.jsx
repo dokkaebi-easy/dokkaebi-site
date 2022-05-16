@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import Grid from "@mui/material/Grid";
+import HorizontalNonLinearStepper from "./stepper";
 import Img_a from "../../assets/guide/createProject/01.png";
 import Img_b from "../../assets/guide/createProject/02.png";
 import Img_c from "../../assets/guide/createProject/03.png";
@@ -24,6 +25,7 @@ import Img_t from "../../assets/guide/createProject/20.png";
 const Create = () => {
   return (
     <div>
+      <HorizontalNonLinearStepper />
       <H1>프로젝트 생성 페이지</H1>
       <Grid container spacing={2}>
         <Grid item xs={12}>

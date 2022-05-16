@@ -5,7 +5,7 @@ const Install = () => {
     <div>
       <H1>Dokerby 설치</H1>
       <P1>dockerby에서는 8482 Port를 지정해서 사용하고 있습니다.</P1>
-      <P1>최신 버전 정보 `0.0.4`</P1>
+      <P1>최신 버전 정보 `0.0.6`</P1>
       <P1>해당 Docker Hub를 참고하시길 바랍니다.</P1>
       <P1>
         <a

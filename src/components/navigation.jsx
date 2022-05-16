@@ -51,7 +51,7 @@ export const Navigation = (props) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                다운로드
+                도커허브
               </a>
             </li>
           </ul>
