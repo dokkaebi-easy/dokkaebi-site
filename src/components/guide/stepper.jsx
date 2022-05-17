@@ -5,6 +5,11 @@ import Step from "@mui/material/Step";
 import StepButton from "@mui/material/StepButton";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import Settings from "./projectcreate/settings";
+import Dbsetting from "./projectcreate/dbsetting";
+import Nginxsetting from "./projectcreate/nginxsetting";
+import Gitsetting from "./projectcreate/gitsetting";
+import Makeproject from "./projectcreate/makeproject";
 
 const steps = [
   "FE/BE Settings",
@@ -35,6 +40,7 @@ export default function HorizontalNonLinearStepper() {
   };
 
   const handleNext = () => {
+    window.scrollTo(0, 0);
     const newActiveStep =
       isLastStep() && !allStepsCompleted()
         ? // It's the last step, but not all steps have been completed,
@@ -45,6 +51,7 @@ export default function HorizontalNonLinearStepper() {
   };
 
   const handleBack = () => {
+    window.scrollTo(0, 0);
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
@@ -52,16 +59,11 @@ export default function HorizontalNonLinearStepper() {
     setActiveStep(step);
   };
 
-  const handleReset = () => {
-    setActiveStep(0);
-    setCompleted({});
-  };
-
   return (
     <Box sx={{ width: "100%" }}>
       <Stepper alternativeLabel nonLinear activeStep={activeStep}>
         {steps.map((label, index) => (
-          <Step key={label} completed={completed[index]}>
+          <Step key={label} completed={completed[index]} sx={{ pt: 0.6 }}>
             <StepButton color="inherit" onClick={handleStep(index)}>
               {label}
             </StepButton>
@@ -71,18 +73,22 @@ export default function HorizontalNonLinearStepper() {
       <div>
         {allStepsCompleted() ? (
           <React.Fragment>
-            <Typography sx={{ mt: 2, mb: 1 }}>
-              All steps completed - you&apos;re finished
-            </Typography>
             <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
               <Box sx={{ flex: "1 1 auto" }} />
-              <Button onClick={handleReset}>Reset</Button>
             </Box>
           </React.Fragment>
         ) : (
           <React.Fragment>
-            <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
-            <Box sx={{ display: "flex", flexDirection: "row", pt: 2 }}>
+            {
+              {
+                1: <Settings />,
+                2: <Dbsetting />,
+                3: <Nginxsetting />,
+                4: <Gitsetting />,
+                5: <Makeproject />,
+              }[activeStep + 1]
+            }
+            <Box sx={{ display: "flex", flexDirection: "row", pt: 2, pb: 4 }}>
               <Button
                 color="inherit"
                 disabled={activeStep === 0}
