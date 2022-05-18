@@ -45,6 +45,11 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
+              <a href="/video" className="page-scroll">
+                홍보영상
+              </a>
+            </li>
+            <li>
               <a
                 href="https://hub.docker.com/r/edh1021/dockerby"
                 className="page-scroll"

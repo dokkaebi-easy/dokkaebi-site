@@ -6,6 +6,9 @@ import Img_d from "../../../assets/guide/createProject/04.png";
 import Img_e from "../../../assets/guide/createProject/05.png";
 import Img_f from "../../../assets/guide/createProject/06.png";
 import Img_g from "../../../assets/guide/createProject/07.png";
+import img_setting from "../../../assets/guide/createProject/setting_4.png";
+import setting_property from "../../../assets/guide/createProject/setting_property.png";
+import setting_volume from "../../../assets/guide/createProject/setting_volume.png";
 
 const Settings = () => {
   return (
@@ -53,18 +56,31 @@ const Settings = () => {
                   기본항목에 알맞는 폴더 ./back_end 또는 ./front_end 를
                   입력하시면 됩니다.
                 </P1>
+                <Img1 src={img_setting} alt="이미지 없음" />
+                <P1>
+                  만일 Git Repository에서 위의 예시처럼 FE나 BE등의 경로를
+                  구분하지 않고 단일 프레임워크 또는 DB를 베포할 경우에는 Root
+                  경로인 `/`만 입력해주시면 됩니다
+                </P1>
               </Exbox>
               <Exbox>
                 <P1>
-                  <Bold>ㆍBulid File Path[선택]</Bold>: 컴파일러를 통해 빌드된
-                  산출물이 위치하는 경로 를 입력
+                  <Bold>ㆍBulid File Path[선택]</Bold>: 빌드된 산출물이 위치하는
+                  경로를 입력
                 </P1>
-                <P1>&nbsp; 예시 : spring boot를 사용하는 경우,</P1>
+                <P1>
+                  &nbsp;각 프레임워크별 기본 Build 경로가 있는데 , 별도로
+                  지정하지 않았을 경우에는 입력하지 않아도 됩니다.
+                </P1>
+                <P1>&nbsp;예시 : spring boot를 사용하는 경우,</P1>
                 <Img1 src={Img_f} alt="이미지없음" />
                 <P1>
                   ※ 여기서 말하는 빌드된 산출물이란 build가 완료되면 libs 폴더
-                  하위에 위치하는 jar 파일을 말합니다. 따라서 위와 같은 구조라면
-                  ./build/libs 이 빌드된 산출물이 위치하는 경로를 말합니다.
+                  하위에 위치하는 jar 파일을 말합니다.
+                  <br /> 따라서 위와 같은 구조라면 ./build/libs 이 빌드된
+                  산출물이 위치하는 경로를 말하지만,
+                  <br /> ./build/libs는 Springboot의 기본 빌드 경로임으로 Build
+                  File Path을 입력하지 않아도 됩니다.
                 </P1>
               </Exbox>
             </P1>
@@ -74,26 +90,24 @@ const Settings = () => {
               여러 Property 속성이 필요한 경우 +PROPERTY ADD 버튼을 통해
               Property를 추가할 수 있습니다.
             </P1>
+            <Img1 src={setting_property} alr="이미지 없음" />
             <P1>
-              - 속성 설명 <br /> &nbsp; <Bold> ㆍ포트번호 [선택]</Bold> :
+              - 속성 설명 <br /> &nbsp; <Bold> ㆍpublish [선택]</Bold> :
               host에서 접속할 수 있는 포트번호를 설정
             </P1>
-            <Textbox>
-              # docker에서 활용되는 예시 <br />$ docker run -d -p 8080:8000
-              python:3.8-alpine python -m http.server
-            </Textbox>
-            <P1>위 예시에서 8080이 포트번호에 해당한다.</P1>
             <P1>
-              &nbsp;ㆍ보존할 폴더 위치 [선택] : 재배포시 모든 데이터 & 폴더가
-              사라지게 됩니다. 실제 디스크에 영구적으로 데이터를 저장할 폴더의
+              위 예시처럼 사용하면 배포 완료후 8000 포트 번호로 접속할 수 있다.
+            </P1>
+            <Img1 src={setting_volume} alr="이미지 없음" />
+            <P1>
+              <Bold> ㆍvolume [선택]</Bold> : 재배포시 모든 데이터 & 폴더가
+              사라지게 됩니다. 실제 디스크에 영구적으로 데이터를 저장 할 폴더의
               위치를 입력해주세요.
             </P1>
-            <Textbox>
-              # docker에서 활용되는 예시 <br /># -v {"<"}host path{">"}:{"<"}
-              mounting point path in container{">"} <br />$ docker run -v
-              /var/dockerby/{"{"}project{"}"}:/image
-            </Textbox>
-            <P1>위 예시에서 /image 가 보존할 폴더 위치에 해당한다.</P1>
+            <P1>
+              위 예시처럼 입력하면 images 폴더가 생성 되고 /images경로에
+              데이터를 백업하게 됩니다.
+            </P1>
           </Item>
         </Grid>
       </Grid>

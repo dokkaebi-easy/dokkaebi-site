@@ -1,0 +1,28 @@
+import styled from "@emotion/styled";
+
+const Video = () => {
+  return (
+    <div>
+      <IframeDiv>
+        <iframe
+          width="840"
+          height="600"
+          src="https://www.youtube.com/embed/5UQ2wJGTcGI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </IframeDiv>
+    </div>
+  );
+};
+
+export default Video;
+
+const IframeDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding-bottom: 30px;
+`;

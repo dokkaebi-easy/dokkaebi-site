@@ -12,9 +12,9 @@ const Makeproject = () => {
             <Title1> 5. Make Project</Title1>
             <P1>- Make Project에서 build 하기 위한 setting을 저장합니다.</P1>
             <Img1 src={Img_s} alt="이미지없음" />
-            <p> Build Setting Save `성공` 했을 경우 화면입니다.</p>
+            <p> Build Setting Save 성공 했을 경우 화면입니다.</p>
             <Img1 src={Img_t} alt="이미지없음" />
-            <p> Build Setting Save `실패` 했을 경우 화면입니다.</p>
+            <p> 저장 실패시 메세지는 추후 업데이트 예정입니다.</p>
           </Item>
         </Grid>
       </Grid>

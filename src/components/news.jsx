@@ -29,6 +29,27 @@ export const News = () => {
               <TimelineSeparator>
                 <TimelineConnector />
                 <TimelineDot color="primary">
+                  <LaptopMacIcon />
+                </TimelineDot>
+                <TimelineConnector />
+              </TimelineSeparator>
+              <TimelineContent sx={{ py: "24px", px: 2 }}>
+                <Typography variant="h6" component="span">
+                  13 May
+                </Typography>
+                <Typography variant="h4">dockerby 0.0.6 released</Typography>
+              </TimelineContent>
+            </TimelineItem>
+            <TimelineItem>
+              <TimelineOppositeContent
+                sx={{ m: "auto 0" }}
+                align="right"
+                variant="body2"
+                color="text.secondary"
+              ></TimelineOppositeContent>
+              <TimelineSeparator>
+                <TimelineConnector />
+                <TimelineDot color="primary">
                   <PlayCircleFilledWhiteIcon />
                 </TimelineDot>
                 <TimelineConnector />

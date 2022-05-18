@@ -7,6 +7,7 @@ import Dockerinstall from "./components/guide/dockerinstall";
 import Install from "./components/guide/install";
 import Login from "./components/guide/login";
 import Version from "./components/guide/version";
+import Video from "./components/video";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navigation } from "./components/navigation";
 
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/install" element={<Install />} />
             <Route path="/login" element={<Login />} />
             <Route path="/version" element={<Version />} />
+            <Route path="/video" element={<Video />} />
           </Route>
         </Routes>
       </Router>

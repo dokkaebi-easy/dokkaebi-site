@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import Img_h from "../../../assets/guide/createProject/08.png";
 import Img_i from "../../../assets/guide/createProject/09.png";
 import Img_j from "../../../assets/guide/createProject/10.png";
+import dbsetting_mongo from "../../../assets/guide/createProject/dbsetting_mongo.png";
 
 const Dbsetting = () => {
   return (
@@ -19,7 +20,7 @@ const Dbsetting = () => {
               &nbsp; <Bold>ㆍDB [필수]</Bold> : 사용하는 DB종류 선택 <br />
               &nbsp; <Bold>ㆍVersion [필수]</Bold> : 선택한 DB version들 중
               알맞는 version을 선택 <br />
-              &nbsp; <Bold>ㆍPort [필수]</Bold> : 데이터베이스 서버 포트번호{" "}
+              &nbsp; <Bold>ㆍPort [필수]</Bold> : 데이터베이스 서버 포트번호
               <br />
               &nbsp; ㆍDump File Dir [선택] : 데이터베이스 덤프 파일 (테이블
               create ㆍ쿼리가 들어있는 sql파일이 있는 경로)
@@ -28,7 +29,9 @@ const Dbsetting = () => {
               📢 각 DB마다 필요로 하는 항목이 다르므로 DB 선택에 따라 추가
               항목이 달라집니다.
             </Colorbox>
+            <P1>- 예시{")"} MySQL, MariaDB</P1>
             <Img1 src={Img_i} alt="이미지없음" />
+            <P1> &nbsp; ※ Mysql 과 Mariadb의 기본 PORT : 3306</P1>
             <P1>
               &nbsp;{" "}
               <Bold>ㆍ MYSQL_ROOT_PASSWORD / MARIADB_ROOT_PASSWORD[필수]</Bold>{" "}
@@ -39,6 +42,15 @@ const Dbsetting = () => {
               데이터베이스 유저 계정 <br /> &nbsp;{" "}
               <Bold>ㆍ MYSQL_PASSWORD / MARIADB_PASSWORD [필수]</Bold>: 생성할
               데이터베이스 유저 비밀번호
+            </P1>
+            <P1>- 예시{")"} Mongo</P1>
+            <Img1 src={dbsetting_mongo} alt="이미지없음" />
+            <P1> &nbsp; ※ Mysql 과 Mariadb의 기본 PORT : 27017</P1>
+            <P1>
+              &nbsp; <Bold>ㆍ MONGO_INITDB_ROOT_USERNAME[필수]</Bold> : 생성할
+              데이터베이스 유저 계정 <br />
+              &nbsp; <Bold>ㆍ MONGO_INITDB_ROOT_PASSWORD [필수]</Bold>
+              : 생성할 데이터베이스 유저 비밀번호 <br />
             </P1>
             <TextboxBlack>
               Dockerby를 이용해 데이터 베이스를 배포할 때에는 서버의

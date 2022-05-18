@@ -16,7 +16,7 @@ const Login = () => {
       <P1>2. 회원가입 FROM 양식에 맞춰서 기입</P1>
       <img src="img/guide/login/02.png" alt="signup_view" />
 
-      <P1>- ID 중복 확인, 이름 중복 확인을 통해 validation 체크해주세요.</P1>
+      <P1>- ID 중복 확인, 이름 중복 확인을 통해 중복체크해주세요.</P1>
       <P1>
         - 인증키는 여러분의 프로젝트에 다른 사람으로부터 접근을 보호하기 위한
         수단입니다.

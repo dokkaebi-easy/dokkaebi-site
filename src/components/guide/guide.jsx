@@ -43,7 +43,7 @@ export default function Guide(props) {
           { text: "Dockerby 지원 버전", url: "version" },
         ].map((list) => (
           <StyledLink to={"/" + list.url}>
-            <ListItem button key={list.text}>
+            <ListItem button key={list.url}>
               <ListItemIcon>
                 {
                   {
@@ -72,7 +72,7 @@ export default function Guide(props) {
           { text: "프로젝트 배포", url: "distribute" },
         ].map((list) => (
           <StyledLink to={"/" + list.url}>
-            <ListItem button key={list.text}>
+            <ListItem button key={list.url}>
               <ListItemIcon>
                 {
                   {

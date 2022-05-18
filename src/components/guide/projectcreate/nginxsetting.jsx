@@ -15,8 +15,8 @@ const Nginxsetting = () => {
             <P1>
               - 여러 Domain이 필요한 경우 `+DOMAIN ADD` 버튼을 통해{" "}
               <Bold>입력 FORM을 추가</Bold>할 수 있습니다. <br /> - 사용하는
-              서버의 도메인 주소를 입력하면 됩니다.
-              `[k6s205.p.ssafy.io](http://k6s205.p.ssafy.io)` / `_`
+              서버의 도메인 주소를 입력하면 됩니다. (기본 경로 : `_`) <br />
+              &nbsp; 예시{")"} http://k6s205.p.ssafy.io
             </P1>
             <Subtitle> 3-2. Domain 설정 [옵션]</Subtitle>
             <P1>
