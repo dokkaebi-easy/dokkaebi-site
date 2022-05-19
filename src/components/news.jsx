@@ -35,9 +35,9 @@ export const News = () => {
               </TimelineSeparator>
               <TimelineContent sx={{ py: "24px", px: 2 }}>
                 <Typography variant="h6" component="span">
-                  13 May
+                  19 May
                 </Typography>
-                <Typography variant="h4">dockerby 0.0.6 released</Typography>
+                <Typography variant="h4">dockerby 0.0.7 released</Typography>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>

@@ -22,11 +22,9 @@ const Dockerinstall = () => {
         <Span1>Step 2: </Span1> 필수 패키지 설치
       </P1>
       <Textbox>
-        $ sudo apt-get install -y ca- <br />
-        certificates \ <br />
+        $ sudo apt-get install -y ca-certificates \ <br />
         curl \ <br />
-        software-properties- <br />
-        common \ <br />
+        software-properties-common \ <br />
         apt-transport-https \ <br />
         gnupg \ <br />
         lsb-release <br />
@@ -55,6 +53,7 @@ const Dockerinstall = () => {
         $ sudo apt-get update <br />$ sudo apt-get install docker-ce
         docker-ce-cli containerd.io
       </Textbox>
+      <Footer></Footer>
     </div>
   );
 };
@@ -90,6 +89,6 @@ const Textbox = styled.div`
   font-size: 18px;
 `;
 
-// const Footer = styled.div`
-//   padding-bottom: 100px;
-// `;
+const Footer = styled.div`
+  padding-bottom: 40px;
+`;

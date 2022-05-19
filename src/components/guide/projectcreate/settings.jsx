@@ -1,13 +1,13 @@
 import styled from "@emotion/styled";
 import Grid from "@mui/material/Grid";
-import Img_a from "../../../assets/guide/createProject/01.png";
-import Img_c from "../../../assets/guide/createProject/03.png";
-import Img_d from "../../../assets/guide/createProject/04.png";
-import Img_e from "../../../assets/guide/createProject/05.png";
-import Img_f from "../../../assets/guide/createProject/06.png";
-import Img_g from "../../../assets/guide/createProject/07.png";
-import img_setting from "../../../assets/guide/createProject/setting_4.png";
+import setting_main from "../../../assets/guide/createProject/setting_main.png";
+import setting_name from "../../../assets/guide/createProject/setting_name.png";
+import setting_febe from "../../../assets/guide/createProject/setting_febe.png";
+import setting_filepath from "../../../assets/guide/createProject/setting_filepath.png";
+import setting_spring from "../../../assets/guide/createProject/setting_spring.png";
 import setting_property from "../../../assets/guide/createProject/setting_property.png";
+import img_setting from "../../../assets/guide/createProject/setting_4.png";
+import setting_publish from "../../../assets/guide/createProject/setting_publish.png";
 import setting_volume from "../../../assets/guide/createProject/setting_volume.png";
 
 const Settings = () => {
@@ -20,37 +20,37 @@ const Settings = () => {
             <P1>
               - 메인화면의 CREATE 버튼을 클릭 → 프로젝트 생성 화면으로 이동
             </P1>
-            <Img1 src={Img_a} alt="이미지없음" />
-            <Subtitle>1-1. 배포하고자 하는 Project Name 설정</Subtitle>
-            <Img1 src={Img_c} alt="이미지없음" />
+            <Img1 src={setting_main} alt="이미지없음" />
+            <Subtitle>1-1. 배포하고자 하는 프로젝트 명칭 설정</Subtitle>
+            <Img1 src={setting_name} alt="이미지없음" />
             <Subtitle>
               1-2. 해당하는 FE/BE Setting 항목 양식에 맞춰 기입
             </Subtitle>
-            <Img2 src={Img_d} alt="이미지없음" />
+            <Img2 src={setting_febe} alt="이미지없음" />
             <P1>
               여러 FE/BE Setting이 필요한 경우 `+FE/BE ADD` 버튼을 통해 입력
               FORM을 추가할 수 있습니다.
             </P1>
             <P1>
               - 기본 항목 설명 <br />
-              &nbsp; <Bold> ㆍName [필수] </Bold> : Framework 또는 Library 별칭
+              &nbsp; <Bold> ㆍ명칭 [필수] </Bold> : Framework 또는 Library 별칭
               설정 (소문자로만 작성) <br />
-              &nbsp; <Bold> ㆍFramework [필수] </Bold> : 사용하는 Framework 또는
-              Library를 선택 <br />
-              &nbsp; <Bold> ㆍVersion [필수] </Bold> : Framework에서 선택한
+              &nbsp; <Bold> ㆍ프레임워크 [필수] </Bold> : 사용하는 Framework
+              또는 Library를 선택 <br />
+              &nbsp; <Bold> ㆍ버전 [필수] </Bold> : Framework에서 선택한
               Framework 또는 Library에서 사용하는 언어 version들 중 알맞는
               version을 선택 <br />
-              &nbsp; ㆍType [선택] <br />
+              &nbsp; ㆍ타입 [선택] <br />
               &nbsp; &nbsp; - Spring의 경우, 빌드 툴(Gradle, Maven 중 하나)를
               선택 <br />
               &nbsp; &nbsp; - Vue, React의 경우, Nginx 사용여부를 선택 <br />
               <Exbox>
-                <Bold> ㆍProject File Dir [필수] </Bold> : 프로젝트에서 build될
-                폴더 <br />
+                <Bold> ㆍ프로젝트 파일 경로 [필수] </Bold> : 프로젝트에서
+                build될 폴더 <br />
                 <P1>
                   &nbsp; 예시 : gitlab repository 메인 화면을 기준으로 참고
                 </P1>
-                <Img1 src={Img_e} alt="이미지없음" />
+                <Img1 src={setting_filepath} alt="이미지없음" />
                 <P1>
                   여기에서 back_end, front_end 와 같은 폴더를 build할 예정이므로
                   기본항목에 알맞는 폴더 ./back_end 또는 ./front_end 를
@@ -60,12 +60,12 @@ const Settings = () => {
                 <P1>
                   만일 Git Repository에서 위의 예시처럼 FE나 BE등의 경로를
                   구분하지 않고 단일 프레임워크 또는 DB를 베포할 경우에는 Root
-                  경로인 `/`만 입력해주시면 됩니다
+                  경로인 `/`만 입력해주시면 됩니다.
                 </P1>
               </Exbox>
               <Exbox>
                 <P1>
-                  <Bold>ㆍBulid File Path[선택]</Bold>: 빌드된 산출물이 위치하는
+                  <Bold>ㆍ산출물 경로 [선택]</Bold>: 빌드된 산출물이 위치하는
                   경로를 입력
                 </P1>
                 <P1>
@@ -73,7 +73,7 @@ const Settings = () => {
                   지정하지 않았을 경우에는 입력하지 않아도 됩니다.
                 </P1>
                 <P1>&nbsp;예시 : spring boot를 사용하는 경우,</P1>
-                <Img1 src={Img_f} alt="이미지없음" />
+                <Img1 src={setting_spring} alt="이미지없음" />
                 <P1>
                   ※ 여기서 말하는 빌드된 산출물이란 build가 완료되면 libs 폴더
                   하위에 위치하는 jar 파일을 말합니다.
@@ -85,18 +85,19 @@ const Settings = () => {
               </Exbox>
             </P1>
             <Subtitle>1-3. Property 속성 양식에 맞춰 기입</Subtitle>
-            <Img2 src={Img_g} alt="이미지없음" />
+            <Img2 src={setting_property} alt="이미지없음" />
             <P1>
               여러 Property 속성이 필요한 경우 +PROPERTY ADD 버튼을 통해
               Property를 추가할 수 있습니다.
             </P1>
-            <Img1 src={setting_property} alr="이미지 없음" />
+            <Img1 src={setting_publish} alr="이미지 없음" />
             <P1>
               - 속성 설명 <br /> &nbsp; <Bold> ㆍpublish [선택]</Bold> :
               host에서 접속할 수 있는 포트번호를 설정
             </P1>
             <P1>
-              위 예시처럼 사용하면 배포 완료후 8000 포트 번호로 접속할 수 있다.
+              위 예시처럼 사용하면 배포 완료후 8000 포트 번호로 접속할 수
+              있습니다.
             </P1>
             <Img1 src={setting_volume} alr="이미지 없음" />
             <P1>
@@ -145,7 +146,7 @@ const Img1 = styled.img`
 `;
 
 const Img2 = styled.img`
-  max-width: 1200px;
+  max-width: 800px;
 `;
 
 const Title1 = styled.h2`

@@ -7,8 +7,8 @@ export const Header = (props) => {
         <div className="overlay">
           <div className="container">
             <div className="row">
-              <div className="col-md-5  intro-text">
-                <img src="img/Dockerby_logo_main.png" alt="없음" />
+              <div className="col-md-12 intro-text">
+                <img src="img/Dockerby_logo.png" alt="없음" />
                 <h1>
                   {props.data ? props.data.title : "Loading"}
                   <span>BY</span>

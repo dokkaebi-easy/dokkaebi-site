@@ -1,8 +1,7 @@
 import styled from "@emotion/styled";
 import Grid from "@mui/material/Grid";
-import Img_h from "../../../assets/guide/createProject/08.png";
-import Img_i from "../../../assets/guide/createProject/09.png";
-import Img_j from "../../../assets/guide/createProject/10.png";
+import dbsetting_main from "../../../assets/guide/createProject/dbsetting_main.png";
+import dbsetting_mysql from "../../../assets/guide/createProject/dbsetting_mysql.png";
 import dbsetting_mongo from "../../../assets/guide/createProject/dbsetting_mongo.png";
 
 const Dbsetting = () => {
@@ -12,17 +11,31 @@ const Dbsetting = () => {
         <Grid item xs={12}>
           <Item>
             <Title1>2. DB Setting</Title1>
-            <Img1 src={Img_h} alt="이미지없음" />
+            <Colorbox>
+              📢 Dockerby를 이용해 데이터베이스를 배포할 때에는 서버의
+              데이터베이스 주소가 변경되어야합니다. <br />
+              예시) 스프링부트 <br />
+              1.
+              spring.datasource.url=jdbc:mariadb://k6s205.p.ssafy.io:3306/dockerby
+              <br />
+              2. spring.datasource.url=jdbc:mariadb://{"{"}projectName{"}"}-
+              {"{"}dbName{"}"}
+              :3306/dockerby <br /> 예를들어 빌드 환경설정에서 입력한
+              projectName이 dockerby, DB 환경설정에서 입력한 Name이 maria라면
+              jdbc:mariadb://dockerby-maria:3306/dockerby 로 입력해주세요
+            </Colorbox>
+            <Img1 src={dbsetting_main} alt="이미지없음" />
             <P1>
               - 기본 항목 설명 <br />
-              &nbsp; <Bold>ㆍName [필수]</Bold> : DB 별칭 설정 (소문자로만 작성){" "}
+              &nbsp; <Bold>ㆍ명칭 [필수]</Bold> : 데이터베이스 별칭 설정
+              (소문자로만 작성) <br />
+              &nbsp; <Bold>ㆍ데이터베이스 [필수]</Bold> : 사용하는 DB종류 선택{" "}
               <br />
-              &nbsp; <Bold>ㆍDB [필수]</Bold> : 사용하는 DB종류 선택 <br />
-              &nbsp; <Bold>ㆍVersion [필수]</Bold> : 선택한 DB version들 중
-              알맞는 version을 선택 <br />
-              &nbsp; <Bold>ㆍPort [필수]</Bold> : 데이터베이스 서버 포트번호
+              &nbsp; <Bold>ㆍ버전 [필수]</Bold> : 선택한 데이터베이스 버전들 중
+              알맞는 버전을 선택 <br />
+              &nbsp; <Bold>ㆍ포트 [필수]</Bold> : 데이터베이스 서버 포트번호
               <br />
-              &nbsp; ㆍDump File Dir [선택] : 데이터베이스 덤프 파일 (테이블
+              &nbsp; ㆍ덤프 파일 경로 [선택] : 데이터베이스 덤프 파일 (테이블
               create ㆍ쿼리가 들어있는 sql파일이 있는 경로)
             </P1>
             <Colorbox>
@@ -30,7 +43,7 @@ const Dbsetting = () => {
               항목이 달라집니다.
             </Colorbox>
             <P1>- 예시{")"} MySQL, MariaDB</P1>
-            <Img1 src={Img_i} alt="이미지없음" />
+            <Img1 src={dbsetting_mysql} alt="이미지없음" />
             <P1> &nbsp; ※ Mysql 과 Mariadb의 기본 PORT : 3306</P1>
             <P1>
               &nbsp;{" "}
@@ -52,19 +65,6 @@ const Dbsetting = () => {
               &nbsp; <Bold>ㆍ MONGO_INITDB_ROOT_PASSWORD [필수]</Bold>
               : 생성할 데이터베이스 유저 비밀번호 <br />
             </P1>
-            <TextboxBlack>
-              Dockerby를 이용해 데이터 베이스를 배포할 때에는 서버의
-              데이터베이스 주소가 변경되어야합니다. <br />
-              예시) 스프링부트 <br />
-              1.
-              spring.datasource.url=jdbc:mariadb://k6s205.p.ssafy.io:3306/dockerby
-              <br />
-              2. spring.datasource.url=jdbc:mariadb://{"{"}projectName{"}"}-
-              {"{"}dbName{"}"}
-              :3306/dockerby <br /> 예를들어 빌드 환경설정에서 입력한
-              projectName이 dockerby, DB 환경설정에서 입력한 Name이 maria라면
-              jdbc:mariadb://dockerby-maria:3306/dockerby 로 입력해주세요
-            </TextboxBlack>
           </Item>
         </Grid>
       </Grid>

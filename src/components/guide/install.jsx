@@ -20,7 +20,7 @@ const Install = () => {
         sudo docker run -d -p 8482:80 -v
         /var/run/docker.sock:/var/run/docker.sock -v
         /usr/bin/docker:/usr/bin/docker -v /var/dockerby:/var/dockerby --name
-        dockerby edh1021/dockerby:0.0.4
+        dockerby edh1021/dockerby:latest
       </Textbox>
       <br />
       <br />

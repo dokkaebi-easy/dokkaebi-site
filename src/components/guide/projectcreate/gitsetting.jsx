@@ -1,9 +1,9 @@
 import styled from "@emotion/styled";
 import Grid from "@mui/material/Grid";
-import Img_k from "../../../assets/guide/createProject/11.png";
-import Img_l from "../../../assets/guide/createProject/12.png";
-import Img_m from "../../../assets/guide/createProject/13.png";
-import Img_n from "../../../assets/guide/createProject/14.png";
+import gitsetting_main from "../../../assets/guide/createProject/gitsetting_main.png";
+import gitsetting_accesstokens from "../../../assets/guide/createProject/gitsetting_accesstokens.png";
+import gitsetting_createtokens from "../../../assets/guide/createProject/gitsetting_createtokens.png";
+import gitsetting_connect from "../../../assets/guide/createProject/gitsetting_connect.png";
 import Img_o from "../../../assets/guide/createProject/15.png";
 import Img_p from "../../../assets/guide/createProject/16.png";
 import Img_q from "../../../assets/guide/createProject/17.png";
@@ -15,31 +15,32 @@ const Gitsetting = () => {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Item>
-            <Title1> 4. Git Setting</Title1>
+            <Title1> 5. Git Setting</Title1>
             <P1>- 해당하는 Git Setting 항목 양식에 맞춰 기입</P1>
-            <Img1 src={Img_k} alt="이미지없음" />
-            <Subtitle> 4-1. Connect</Subtitle>
+            <Img1 src={gitsetting_main} alt="이미지없음" />
+            <Subtitle> 5-1. Connect</Subtitle>
             <P1>
-              <Bold>ㆍ Host Url </Bold>설정 <br />
+              <Bold>ㆍ 기본 도메인 Url </Bold>설정 <br />
               - GitLab 페이지 기본 도메인 이름을 뜻함 <br />
               예시) ssafy에서 제공하는 기본 도메인은 `https://lab.ssafy.com`으로
-              <Bold> Host Url</Bold>은 `https://lab.ssafy.com`이 됩니다. <br />
+              <Bold> 기본 도메인</Bold>은 `https://lab.ssafy.com`이 됩니다.{" "}
+              <br />
               <Bold>ㆍ Access Token </Bold>설정 <br />- GitLab에서 Access Token
               발급 <br /> &nbsp; &nbsp;- GitLab 좌측 하단의 `Settings {">"}
               Access Tokens` 에 들어가 Project Access Token 생성
             </P1>
-            <Img1 src={Img_l} alt="이미지없음" />
+            <Img1 src={gitsetting_accesstokens} alt="이미지없음" />
             <P1>
-              api, read_api, read_repository 체크 후 Create project access token
-              버튼을 눌러 access token 생성
+              <Bold>api, read_api, read_repository</Bold> 체크 후 Create project
+              access token 버튼을 눌러 access token 생성
             </P1>
-            <Img1 src={Img_m} alt="이미지없음" />
+            <Img1 src={gitsetting_createtokens} alt="이미지없음" />
             <P1>
               상단 화면의 Your new project access token에 만들어진 access
               token을 Connect Credentials 항목에 맞춰 기입한 후 등록
             </P1>
-            <Img1 src={Img_n} alt="이미지없음" />
-            <Subtitle> 4-2. Repositories</Subtitle>
+            <Img1 src={gitsetting_connect} alt="이미지없음" />
+            <Subtitle> 5-2. Repositories</Subtitle>
             <P1>
               <Bold>ㆍProject ID</Bold> 설정 <br /> &nbsp; &nbsp;- GitLab
               Repository에서 등록할 프로젝트의 Project ID를 입력해야 합니다.
@@ -54,7 +55,7 @@ const Gitsetting = () => {
               <Bold>ㆍBranch Name</Bold> 설정 <br /> &nbsp; &nbsp; - GitLab
               Repository에서 배포할 기준이 되는 Branch Name을 입력해주세요.
             </P1>
-            <Subtitle> 4-3. Connection Check</Subtitle>
+            <Subtitle> 5-3. Connection Check</Subtitle>
             <P1>
               <Bold>ㆍSecret Token</Bold> 설정 <br /> &nbsp; &nbsp;- `+
               CREATE`버튼을 클릭해 <Bold>Secret Token 생성</Bold>

@@ -22,7 +22,7 @@ const Distribute = () => {
         - 배포 진행 과정은 Sate List를 통해 Pull, Build, Run 상태를 확인할 수
         있습니다.
       </P1>
-      <Img1 src="img/guide/deploy/02.png" alt="02" />
+      <Img2 src="img/guide/deploy/02.png" alt="02" />
     </div>
   );
 };
@@ -56,4 +56,9 @@ const P1 = styled.p`
 
 const Img1 = styled.img`
   max-width: 800px;
+`;
+
+const Img2 = styled.img`
+  max-width: 800px;
+  padding-bottom: 40px;
 `;
