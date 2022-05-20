@@ -7,7 +7,7 @@ const Video = () => {
         <iframe
           width="840"
           height="600"
-          src="https://www.youtube.com/embed/5UQ2wJGTcGI"
+          src="https://www.youtube.com/embed/V06Mvr729Yk"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
