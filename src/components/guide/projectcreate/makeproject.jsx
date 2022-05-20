@@ -9,7 +9,7 @@ const Makeproject = () => {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Item>
-            <Title1> 6. Make Project</Title1>
+            <Title1> 5. Make Project</Title1>
             <P1>- Make Project에서 build 하기 위한 setting을 저장합니다.</P1>
             <Img1 src={makeproject_success} alt="이미지없음" />
             <p> Build Setting Save 성공 했을 경우 화면입니다.</p>

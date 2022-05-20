@@ -46,7 +46,7 @@ const Nginxsetting = () => {
               [http://localhost:8080/api/](http://localhost:8080/api/)로
               전송하겠다는 뜻 입니다.
             </P1>
-            <Title1>4. HTTPS Setting</Title1>
+            <Subtitle>3-3 HTTPS Setting</Subtitle>
             <Img1 src={Setting_https1} alt="이미지없음" />
             <P1>
               - HTTPS를 사용하는 경우, HTTPS 체크박스를 체크해 해당 기능을

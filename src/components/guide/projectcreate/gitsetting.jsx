@@ -15,10 +15,10 @@ const Gitsetting = () => {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Item>
-            <Title1> 5. Git Setting</Title1>
+            <Title1> 4. Git Setting</Title1>
             <P1>- 해당하는 Git Setting 항목 양식에 맞춰 기입</P1>
             <Img1 src={gitsetting_main} alt="이미지없음" />
-            <Subtitle> 5-1. Connect</Subtitle>
+            <Subtitle> 4-1. Connect</Subtitle>
             <P1>
               <Bold>ㆍ 기본 도메인 Url </Bold>설정 <br />
               - GitLab 페이지 기본 도메인 이름을 뜻함 <br />
@@ -40,7 +40,7 @@ const Gitsetting = () => {
               token을 Connect Credentials 항목에 맞춰 기입한 후 등록
             </P1>
             <Img1 src={gitsetting_connect} alt="이미지없음" />
-            <Subtitle> 5-2. Repositories</Subtitle>
+            <Subtitle> 4-2. Repositories</Subtitle>
             <P1>
               <Bold>ㆍProject ID</Bold> 설정 <br /> &nbsp; &nbsp;- GitLab
               Repository에서 등록할 프로젝트의 Project ID를 입력해야 합니다.
@@ -55,7 +55,7 @@ const Gitsetting = () => {
               <Bold>ㆍBranch Name</Bold> 설정 <br /> &nbsp; &nbsp; - GitLab
               Repository에서 배포할 기준이 되는 Branch Name을 입력해주세요.
             </P1>
-            <Subtitle> 5-3. Connection Check</Subtitle>
+            <Subtitle> 4-3. Connection Check</Subtitle>
             <P1>
               <Bold>ㆍSecret Token</Bold> 설정 <br /> &nbsp; &nbsp;- `+
               CREATE`버튼을 클릭해 <Bold>Secret Token 생성</Bold>
