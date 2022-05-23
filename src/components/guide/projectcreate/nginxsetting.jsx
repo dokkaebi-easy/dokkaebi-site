@@ -18,6 +18,9 @@ const Nginxsetting = () => {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Item>
+            <Infobox>
+              ❗ FE/BE Settings에서 Nginx 사용을 체크하지 않았다면 별도의 설정 없이 Git Setting 단계로 넘어가주세요
+            </Infobox>
             <Title1>3. NginX Setting</Title1>
             <P1>- 해당하는 NginX Setting 항목 양식에 맞춰 기입</P1>
             <Img1 src={nginxsetting_domain} alt="이미지없음" />
@@ -201,7 +204,18 @@ const Textbox = styled.div`
 const Annotation = styled.span`
   color: gray;
 `;
-
+const Infobox = styled.div`
+  border: 1px solid black;
+  border-color: D9D9D9;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 16px;
+  background-color: orange;
+  color: black;
+  font-size: 18px;
+  width: 1000px;
+`;
 const ColorFont = styled.span`
   background-color: yellow;
 `;
