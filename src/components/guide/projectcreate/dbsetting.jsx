@@ -10,6 +10,11 @@ const Dbsetting = () => {
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Item>
+            <Infobox>
+              ❗ DateBase를 사용하지 않는다면 아무것도 설정하지 않고 Nginx
+              Setting으로 넘어 가주세요
+            </Infobox>
+
             <Title1>2. DB Setting</Title1>
             <Colorbox>
               📢 Dockerby를 이용해 데이터베이스를 배포할 때에는 서버의
@@ -74,16 +79,6 @@ const Dbsetting = () => {
 
 export default Dbsetting;
 
-const TextboxBlack = styled.div`
-  border: 1px solid black;
-  border-color: D9D9D9;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 16px;
-  font-size: 18px;
-`;
-
 const Colorbox = styled.div`
   border: 1px solid black;
   border-color: D9D9D9;
@@ -97,14 +92,23 @@ const Colorbox = styled.div`
   width: 800px;
 `;
 
+const Infobox = styled.div`
+  border: 1px solid black;
+  border-color: D9D9D9;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 16px;
+  background-color: orange;
+  color: black;
+  font-size: 18px;
+  width: 800px;
+`;
+
 const Item = styled.div``;
 
 const Img1 = styled.img`
   max-width: 800px;
-`;
-
-const Img2 = styled.img`
-  max-width: 1200px;
 `;
 
 const Title1 = styled.h2`

@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Navigation } from "./components/navigation";
 import Guide from "./components/guide/guide";
+
 import styled from "@emotion/styled";
 
 const Layout = () => {

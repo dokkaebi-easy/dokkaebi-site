@@ -41,9 +41,12 @@ const Settings = () => {
               Framework 또는 Library에서 사용하는 언어 version들 중 알맞는
               version을 선택 <br />
               &nbsp; ㆍ타입 [선택] <br />
-              &nbsp; &nbsp; - Spring의 경우, 빌드 툴(Gradle, Maven 중 하나)를
-              선택 <br />
-              &nbsp; &nbsp; - Vue, React의 경우, Nginx 사용여부를 선택 <br />
+              &nbsp; &nbsp; &nbsp; - Spring의 경우, 빌드 툴(Gradle, Maven 중
+              하나)를 선택 <br />
+              &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; *빌드 파일의
+              경우 현재 .jar 파일만 지원(.war는 추후 지원 예정) <br />
+              &nbsp; &nbsp; &nbsp; - Vue, React의 경우, Nginx 사용여부를 선택{" "}
+              <br />
               <Exbox>
                 <Bold> ㆍ프로젝트 파일 경로 [필수] </Bold> : 프로젝트에서
                 build될 폴더 <br />
@@ -92,7 +95,7 @@ const Settings = () => {
             </P1>
             <Img1 src={setting_publish} alr="이미지 없음" />
             <P1>
-              - 속성 설명 <br /> &nbsp; <Bold> ㆍpublish [선택]</Bold> :
+              - 속성 설명 <br /> &nbsp; <Bold> ㆍpublish [필수]</Bold> :
               host에서 접속할 수 있는 포트번호를 설정
             </P1>
             <P1>

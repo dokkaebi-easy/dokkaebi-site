@@ -36,19 +36,6 @@ const H1 = styled.h1`
   padding-bottom: 10px;
 `;
 
-const Colorbox = styled.div`
-  border: 1px solid black;
-  border-color: D9D9D9;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 16px;
-  background-color: CCFFFF;
-  color: black;
-  font-size: 18px;
-  width: 800px;
-`;
-
 const P1 = styled.p`
   font-size: 20px;
   margin-top: 10px;

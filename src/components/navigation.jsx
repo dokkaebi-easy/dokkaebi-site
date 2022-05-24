@@ -1,4 +1,4 @@
-export const Navigation = (props) => {
+export const Navigation = ({ props }) => {
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -25,13 +25,13 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="/" className="page-scroll">
-                홈
+              <a href="/beforeinstall" className="page-scroll">
+                설치 및 가이드
               </a>
             </li>
             <li>
-              <a href="/beforeinstall" className="page-scroll">
-                설치 및 가이드
+              <a href="/video" className="page-scroll">
+                홍보 및 시연
               </a>
             </li>
             <li>
@@ -42,11 +42,6 @@ export const Navigation = (props) => {
                 rel="noreferrer"
               >
                 깃허브
-              </a>
-            </li>
-            <li>
-              <a href="/video" className="page-scroll">
-                홍보영상
               </a>
             </li>
             <li>

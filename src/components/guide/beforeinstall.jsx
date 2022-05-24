@@ -35,11 +35,11 @@ const Beforeinstall = () => {
         </AccordionSummary>
         <AccordionDetails>
           <h2>1. PuTTY를 사용해 EC2 인스턴스에 접속</h2>
-          <DIV_a>
+          <Diva>
             <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/">
               PuTTY 다운로드 링크
             </a>
-          </DIV_a>
+          </Diva>
           <img src="img/guide/beforeinstall/ec2_1.png" alt="" />
           <P1>
             ㆍHost Name (IP address): <ColorFont>i6b207.p.ssafy.io</ColorFont>{" "}
@@ -103,7 +103,7 @@ const ColorFont = styled.span`
   background-color: yellow;
 `;
 
-const DIV_a = styled.div`
+const Diva = styled.div`
   font-size: 18px;
   margin-bottom: 15px;
 `;

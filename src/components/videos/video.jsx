@@ -1,8 +1,10 @@
 import styled from "@emotion/styled";
+import Videonav from "./videonav";
 
 const Video = () => {
   return (
     <div>
+      <Videonav />
       <IframeDiv>
         <iframe
           width="840"

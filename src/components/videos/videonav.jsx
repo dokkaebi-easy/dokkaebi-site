@@ -15,13 +15,10 @@ import Filter1Icon from "@mui/icons-material/Filter1";
 import Filter2Icon from "@mui/icons-material/Filter2";
 import Filter3Icon from "@mui/icons-material/Filter3";
 import Filter4Icon from "@mui/icons-material/Filter4";
-import Filter5Icon from "@mui/icons-material/Filter5";
-import Filter6Icon from "@mui/icons-material/Filter6";
-import Filter7Icon from "@mui/icons-material/Filter7";
 
 const drawerWidth = 240;
 
-export default function Guide(props) {
+export default function Guidecopy(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -35,21 +32,13 @@ export default function Guide(props) {
       <Toolbar />
       <Divider style={{ background: "black" }} />
       <List>
-        {[
-          { text: "설치하기전", url: "beforeinstall" },
-          { text: "Docker 설치", url: "dockerinstall" },
-          { text: "Dockerby 설치", url: "install" },
-          { text: "Dockerby 지원 버전", url: "version" },
-        ].map((list) => (
+        {[{ text: "홍보영상", url: "video" }].map((list) => (
           <StyledLink to={"/" + list.url} key={list.url}>
             <ListItem button>
               <ListItemIcon>
                 {
                   {
-                    beforeinstall: <Filter1Icon />,
-                    dockerinstall: <Filter2Icon />,
-                    install: <Filter3Icon />,
-                    version: <Filter4Icon />,
+                    video: <Filter1Icon />,
                   }[list.url]
                 }
               </ListItemIcon>
@@ -66,18 +55,18 @@ export default function Guide(props) {
       <Divider style={{ background: "black" }} />
       <List>
         {[
-          { text: "회원가입/로그인", url: "login" },
-          { text: "프로젝트 생성", url: "create" },
-          { text: "프로젝트 배포", url: "distribute" },
+          { text: "스프링 + 뷰 시연", url: "spring" },
+          { text: "장고 시연", url: "django" },
+          { text: "리엑트 시연", url: "react" },
         ].map((list) => (
           <StyledLink to={"/" + list.url} key={list.url}>
             <ListItem button>
               <ListItemIcon>
                 {
                   {
-                    login: <Filter5Icon />,
-                    create: <Filter6Icon />,
-                    distribute: <Filter7Icon />,
+                    spring: <Filter2Icon />,
+                    django: <Filter3Icon />,
+                    react: <Filter4Icon />,
                   }[list.url]
                 }
               </ListItemIcon>
