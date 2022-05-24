@@ -91,7 +91,6 @@ const Colorbox = styled.div`
   font-size: 18px;
   width: 800px;
 `;
-
 const Infobox = styled.div`
   border: 1px solid black;
   border-color: D9D9D9;
@@ -104,7 +103,6 @@ const Infobox = styled.div`
   font-size: 18px;
   width: 800px;
 `;
-
 const Item = styled.div``;
 
 const Img1 = styled.img`

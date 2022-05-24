@@ -22,7 +22,6 @@ const Nginxsetting = () => {
               ❗ FE/BE Settings에서 Nginx 사용을 체크하지 않았다면 별도의 설정
               없이 Git Setting 단계로 넘어가주세요
             </Infobox>
-
             <Title1>3. NginX Setting</Title1>
             <P1>- 해당하는 NginX Setting 항목 양식에 맞춰 기입</P1>
             <Img1 src={nginxsetting_domain} alt="이미지없음" />
