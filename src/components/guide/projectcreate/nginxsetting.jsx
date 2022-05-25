@@ -212,7 +212,7 @@ const Infobox = styled.div`
   background-color: orange;
   color: black;
   font-size: 18px;
-  width: 1000px;
+  width: 900px;
 `;
 
 const Annotation = styled.span`
