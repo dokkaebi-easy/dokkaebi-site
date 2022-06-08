@@ -38,8 +38,8 @@ export default function Guide(props) {
         {[
           { text: "설치하기전", url: "beforeinstall" },
           { text: "Docker 설치", url: "dockerinstall" },
-          { text: "Dockerby 설치", url: "install" },
-          { text: "Dockerby 지원 버전", url: "version" },
+          { text: "Dokkaebi 설치", url: "install" },
+          { text: "Dokkaebi 지원 버전", url: "version" },
         ].map((list) => (
           <StyledLink to={"/" + list.url} key={list.url}>
             <ListItem button>

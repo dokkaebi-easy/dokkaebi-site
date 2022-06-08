@@ -1,6 +1,6 @@
 {
   "Header": {
-    "title": "DOCKER",
+    "title": "DOKKAEBI",
     "paragraph": "쉽고 빠른 배포"
   },
   "About": {
@@ -106,7 +106,7 @@
   ],
   "Contact": {
     "address": "4321 California St, San Francisco, CA 12345 ",
-    "git": "https://lab.ssafy.com/s06-final/S06P31S205.git",
+    "git": "https://github.com/dokkaebi-easy/dokkaebi.git",
     "email": "edh1021@gmail.com",
     "facebook": "fb.com",
     "twitter": "twitter.com",

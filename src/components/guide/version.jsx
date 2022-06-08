@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 const Version = () => {
   return (
     <div>
-      <H1>Dockerby 지원 버전</H1>
+      <H1> Dokkaebi 지원 버전</H1>
       <P1>- Java : 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18</P1>
       <P1>- Python : 3.5, 3.6, 3.7, 3.8, 3.9, 3.10</P1>
       <P1>- node : 10.23, 12.22, 14.19, 16.14, 17.9</P1>

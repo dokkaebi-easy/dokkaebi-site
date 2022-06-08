@@ -30,7 +30,7 @@ const Nginxsetting = () => {
               - 여러 도메인이 필요한 경우 `+DOMAIN ADD` 버튼을 통해{" "}
               <Bold>입력 FORM을 추가</Bold>할 수 있습니다. <br /> - 사용하는
               서버의 도메인 주소를 입력하면 됩니다. (기본 경로 : `_`) <br />
-              &nbsp; 예시{")"} http://k6s205.p.ssafy.io
+              &nbsp; 예시{")"} http://IP주소
             </P1>
             <Img1 src={nginxsetting_proxy} alt="이미지없음" />
             <Subtitle> 3-2. Domain 설정 [옵션]</Subtitle>
@@ -58,9 +58,9 @@ const Nginxsetting = () => {
             </P1>
             <P1>
               - 서버에서 HTTPS로 통신하기 위해서 공인 SSL 인증서가 필요합니다.{" "}
-              <br />- 현 Dockerby 서비스는 Let’s Encrypt SSL 인증서 발급을
+              <br />- 현 Dokkaebi 서비스는 Let’s Encrypt SSL 인증서 발급을
               권유하고 있기 때문에 fullchain.pem이랑 privkey.pem 사용하는 것을
-              권장하고 있습니다. <br /> - 현 Dockerby 에서는 Certbot을 이용한
+              권장하고 있습니다. <br /> - 현 Dokkaebi 에서는 Certbot을 이용한
               방법 또한 적용은 가능하지만 기능을 제공하고 있지 않으므로 가이드를
               참고해서 <Bold>직접 발급 받으셔야 합니다.</Bold>
             </P1>
@@ -75,7 +75,7 @@ const Nginxsetting = () => {
               <AccordionDetails>
                 <Typography>
                   <P1>
-                    Dockerby에서는 NGINX의 HTTPS 옵션 활성화를 제공하고
+                    Dokkaebi에서는 NGINX의 HTTPS 옵션 활성화를 제공하고
                     있습니다. <br /> 이 뜻은 해당 서버로 요청을 보낼 때 HTTPS로
                     보내야 한다는 것을 의미합니다.
                   </P1>
@@ -106,7 +106,7 @@ const Nginxsetting = () => {
                     $ sudo certbot certonly --standalone -d {"{"}domain{"}"}
                     <br />
                     <Annotation>
-                      # sudo certbot certonly --standalone -d k6s205.p.ssafy.io
+                      # sudo certbot certonly --standalone -d IP주소
                     </Annotation>
                   </Textbox>
                   <Img2 src={Ssl1} alt="이미지없음" />
@@ -132,7 +132,7 @@ const Nginxsetting = () => {
               <P2>
                 &nbsp; 예시{")"} 위 이미지에서
                 <ColorFont>
-                  /etc/letsencrypt/live/k6s205.p.ssafy.io/fullchain.pem
+                  /etc/letsencrypt/live/IP주소/fullchain.pem
                 </ColorFont>
               </P2>
               <Bold>ㆍSSL Certificate Key [필수]</Bold> : privkey.pem의
@@ -140,7 +140,7 @@ const Nginxsetting = () => {
               <P2>
                 &nbsp; 예시{")"} 위 이미지에서
                 <ColorFont>
-                  /etc/letsencrypt/live/k6s205.p.ssafy.io/privkey.pem
+                  /etc/letsencrypt/live/IP주소/privkey.pem
                 </ColorFont>
               </P2>
               <Bold>ㆍSSL 경로 [필수]</Bold> : configuration directory 인

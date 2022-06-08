@@ -37,7 +37,7 @@ export const News = () => {
                 <Typography variant="h6" component="span">
                   19 May
                 </Typography>
-                <Typography variant="h4">dockerby 0.0.7 released</Typography>
+                <Typography variant="h4">dokkaebi 0.0.7 released</Typography>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -56,7 +56,7 @@ export const News = () => {
               </TimelineSeparator>
               <TimelineContent sx={{ py: "24px", px: 2 }}>
                 <Typography variant="h6" component="span"></Typography>
-                <Typography variant="h4">dockerby Proceeding</Typography>
+                <Typography variant="h4">dokkaebi Proceeding</Typography>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -76,7 +76,7 @@ export const News = () => {
                 <Typography variant="h6" component="span">
                   04 May
                 </Typography>
-                <Typography variant="h4">dockerby 0.0.4 released</Typography>
+                <Typography variant="h4">dokkaebi 0.0.4 released</Typography>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -91,7 +91,7 @@ export const News = () => {
                 <Typography variant="h6" component="span">
                   29 Apr
                 </Typography>
-                <Typography variant="h4">dockerby 0.0.3 released</Typography>
+                <Typography variant="h4">dokkaebi 0.0.3 released</Typography>
               </TimelineContent>
             </TimelineItem>
             <TimelineItem>
@@ -106,7 +106,7 @@ export const News = () => {
                 <Typography variant="h6" component="span">
                   11 Apr
                 </Typography>
-                <Typography variant="h4"> dockerby project planning</Typography>
+                <Typography variant="h4"> dokkaebi project planning</Typography>
               </TimelineContent>
             </TimelineItem>
           </Timeline>

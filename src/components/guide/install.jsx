@@ -4,30 +4,30 @@ const Install = () => {
   return (
     <div>
       <H1>Dokerby 설치</H1>
-      <P1>dockerby에서는 8482 Port를 지정해서 사용하고 있습니다.</P1>
+      <P1>dokkaebi에서는 8482 Port를 지정해서 사용하고 있습니다.</P1>
       <P1>해당 Docker Hub를 참고하시길 바랍니다.</P1>
       <P1>
         <a
-          href="https://hub.docker.com/r/edh1021/dockerby"
+          href="https://hub.docker.com/r/edh1021/dokkaebi"
           target="_blank"
           rel="noreferrer"
         >
-          https://hub.docker.com/r/edh1021/dockerby
+          https://hub.docker.com/r/edh1021/dokkaebi
         </a>
       </P1>
       <Span1>Install</Span1>
       <Textbox>
         sudo docker run -d -p 8482:80 -v
         /var/run/docker.sock:/var/run/docker.sock -v
-        /usr/bin/docker:/usr/bin/docker -v /var/dockerby:/var/dockerby --name
-        dockerby edh1021/dockerby:latest
+        /usr/bin/docker:/usr/bin/docker -v /var/dokkaebi:/var/dokkaebi --name
+        dokkaebi edh1021/dokkaebi:latest
       </Textbox>
       <br />
       <br />
-      <Span1>Dockerby 접속</Span1>
+      <Span1>Dokkaebi 접속</Span1>
       <Textbox>
-        서버 도메인 주소에 8482 port로 접속하면 Dockerby에 접속 할 수 있습니다
-        ex) http://k6s205.p.ssafy.io:8482
+        서버 도메인 주소에 8482 port로 접속하면 Dokkaebi에 접속 할 수 있습니다
+        ex) http://IP주소:8482
       </Textbox>
       <br />
       <br />

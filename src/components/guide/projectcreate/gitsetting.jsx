@@ -22,8 +22,8 @@ const Gitsetting = () => {
             <P1>
               <Bold>ㆍ 기본 도메인 Url </Bold>설정 <br />
               - GitLab 페이지 기본 도메인 이름을 뜻함 <br />
-              예시) ssafy에서 제공하는 기본 도메인은 `https://lab.ssafy.com`으로
-              <Bold> 기본 도메인</Bold>은 `https://lab.ssafy.com`이 됩니다.{" "}
+              예시) GitHub 도메인은 `https://github.com/`으로
+              <Bold> 기본 도메인</Bold>은 `https://github.com/`이 됩니다.{" "}
               <br />
               <Bold>ㆍ Access Token </Bold>설정 <br />- GitLab에서 Access Token
               발급 <br /> &nbsp; &nbsp;- GitLab 좌측 하단의 `Settings {">"}
@@ -73,7 +73,7 @@ const Gitsetting = () => {
             </Colorbox>
             <Img1 src={Img_r} alt="이미지없음" />
             <P1>
-              - Dockerby에서 생성한 <Bold>Secret Token</Bold>을 GitLab의
+              - Dokkaebi에서 생성한 <Bold>Secret Token</Bold>을 GitLab의
               webhooks Secret token에 입력해줘야 합니다.
               <br /> - Trigger는 <Bold>Push events, Merge request events</Bold>
               체크 후 `Add webhook` 실행합니다.

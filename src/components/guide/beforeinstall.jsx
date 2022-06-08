@@ -42,7 +42,7 @@ const Beforeinstall = () => {
           </Diva>
           <img src="img/guide/beforeinstall/ec2_1.png" alt="" />
           <P1>
-            ㆍHost Name (IP address): <ColorFont>i6b207.p.ssafy.io</ColorFont>{" "}
+            ㆍHost Name (IP address): <ColorFont>IP주소</ColorFont>{" "}
             <br /> ㆍport : <ColorFont>22</ColorFont>
           </P1>
           <img src="img/guide/beforeinstall/ec2_2.png" alt="" />
@@ -63,7 +63,7 @@ const Beforeinstall = () => {
           <P1>Open을 누르고 login as : 에 ubuntu 입력 후 Enter</P1>
           <h2>2. CMD, Bash</h2>
           <P1>cmd, bash는 .pem 파일을 이용한 ssh 접속 방식입니다.</P1>
-          <Textbox>ssh -i i6b207t.pem ubuntu@i6b207.p.ssafy.io</Textbox>
+          <Textbox>ssh -i i6b207t.pem ubuntu@IP주소</Textbox>
           <P1>
             cmd, bash는 *.pem 파일이 있는 경로에서 열도록하자. 다른 폴더에서
             cmd, bash를 실행할 경우 i6b207t.pem 앞에 폴더 경로가 들어가줘야한다.

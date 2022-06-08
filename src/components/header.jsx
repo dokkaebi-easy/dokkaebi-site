@@ -8,10 +8,9 @@ export const Header = (props) => {
           <div className="container">
             <div className="row">
               <div className="col-md-12 intro-text">
-                <img src="img/Dockerby_logo.png" alt="없음" />
+                <img src="img/Dokkaebi_logo.png" alt="없음" />
                 <h1>
                   {props.data ? props.data.title : "Loading"}
-                  <span>BY</span>
                 </h1>
                 <p>{props.data ? props.data.paragraph : "Loading"}</p>
               </div>

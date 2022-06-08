@@ -17,17 +17,17 @@ const Dbsetting = () => {
 
             <Title1>2. DB Setting</Title1>
             <Colorbox>
-              📢 Dockerby를 이용해 데이터베이스를 배포할 때에는 서버의
+              📢 Dokkaebi를 이용해 데이터베이스를 배포할 때에는 서버의
               데이터베이스 주소가 변경되어야합니다. <br />
               예시) 스프링부트 <br />
               1.
-              spring.datasource.url=jdbc:mariadb://k6s205.p.ssafy.io:3306/dockerby
+              spring.datasource.url=jdbc:mariadb://IP주소:3306/dokkaebi
               <br />
               2. spring.datasource.url=jdbc:mariadb://{"{"}projectName{"}"}-
               {"{"}dbName{"}"}
-              :3306/dockerby <br /> 예를들어 빌드 환경설정에서 입력한
-              projectName이 dockerby, DB 환경설정에서 입력한 Name이 maria라면
-              jdbc:mariadb://dockerby-maria:3306/dockerby 로 입력해주세요
+              :3306/dokkaebi <br /> 예를들어 빌드 환경설정에서 입력한
+              projectName이 dokkaebi, DB 환경설정에서 입력한 Name이 maria라면
+              jdbc:mariadb://dokkaebi-maria:3306/dokkaebi 로 입력해주세요
             </Colorbox>
             <Img1 src={dbsetting_main} alt="이미지없음" />
             <P1>

@@ -4,7 +4,7 @@ const Login = () => {
   return (
     <div>
       <H1>회원가입 / 로그인</H1>
-      <h2>Dockerby 회원가입</h2>
+      <h2>Dokkaebi 회원가입</h2>
       <br></br>
 
       <P1>1. 가입하기 버튼을 클릭→ 회원가입 창으로 이동</P1>
@@ -23,12 +23,12 @@ const Login = () => {
       </P1>
       <P1>
         {" "}
-        dockerby 설치 후, 아래 명령어를 통해 출력된 AuthKey를 입력해주세요.
+        dokkaebi 설치 후, 아래 명령어를 통해 출력된 AuthKey를 입력해주세요.
       </P1>
 
       <Textbox>
-        # dockerby 컨테이너에 접속
-        <br></br>$ docker exec -it dockerby bash
+        # dokkaebi 컨테이너에 접속
+        <br></br>$ docker exec -it dokkaebi bash
         <br></br>
         <br></br># AuthKey출력
         <br></br>$ cat AuthKey
@@ -36,7 +36,7 @@ const Login = () => {
       </Textbox>
       <br></br>
 
-      <P1>3. Dockerby 로그인</P1>
+      <P1>3. Dokkaebi 로그인</P1>
       <img src="img/guide/login/03.png" alt="login_view2" />
     </div>
   );

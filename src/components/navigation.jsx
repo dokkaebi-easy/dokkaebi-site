@@ -15,7 +15,7 @@ export const Navigation = ({ props }) => {
             <span className="icon-bar"></span>
           </button>
           <a className="navbar-brand page-scroll" href="/">
-            Dockerby
+            Dokkaebi
           </a>
         </div>
 
@@ -36,7 +36,7 @@ export const Navigation = ({ props }) => {
             </li>
             <li>
               <a
-                href="https://lab.ssafy.com/s06-final/S06P31S205"
+                href="https://github.com/dokkaebi-easy/dokkaebi.git"
                 className="page-scroll"
                 target="_blank"
                 rel="noreferrer"
@@ -46,7 +46,7 @@ export const Navigation = ({ props }) => {
             </li>
             <li>
               <a
-                href="https://hub.docker.com/r/edh1021/dockerby"
+                href="https://hub.docker.com/r/edh1021/dokkaebi"
                 className="page-scroll"
                 target="_blank"
                 rel="noreferrer"

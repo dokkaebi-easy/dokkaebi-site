@@ -8,7 +8,7 @@ export const Contact = (props) => {
               <div className="section-title">
                 <h2>CONTACT US</h2>
                 <p>
-                  dockerby를 활용하는 방법에 대해서는 설치 및 가이드에 작성된
+                  dokkaebi를 활용하는 방법에 대해서는 설치 및 가이드에 작성된
                   공식문서를 참고해주세요.
                 </p>
                 <p>
@@ -43,7 +43,7 @@ export const Contact = (props) => {
       </div>
       <div id="footer">
         <div className="container text-center">
-          <p>&copy; 2022 Dockerby Team All rights reserved.</p>
+          <p>&copy; 2022 Dokkaebi Team All rights reserved.</p>
           <p>
             &copy; 2020 Issaaf Kattan React Land Page Template. Design by{" "}
             <a href="http://www.templatewire.com" rel="nofollow">
