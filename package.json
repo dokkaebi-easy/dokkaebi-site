@@ -1,5 +1,5 @@
 {
-  "homepage": "http://dokkaebi-easy.org",
+  "homepage": "https://dokkaebi-easy.org",
   "name": "landingpage-react-template",
   "private": true,
   "dependencies": {
@@ -24,7 +24,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build",
+    "deploy": "echo dokkaebi-easy.org> ./build/CNAME && gh-pages -d build",
     "predeploy" : "npm run build"
   },
   "eslintConfig": {

@@ -25,12 +25,12 @@ export const Navigation = ({ props }) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="/beforeinstall" className="page-scroll">
+              <a href="/#/beforeinstall" className="page-scroll">
                 설치 및 가이드
               </a>
             </li>
             <li>
-              <a href="/video" className="page-scroll">
+              <a href="/#/video" className="page-scroll">
                 홍보 및 시연
               </a>
             </li>

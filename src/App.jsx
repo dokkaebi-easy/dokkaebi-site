@@ -11,16 +11,16 @@ import Video from "./components/videos/video";
 import Spring from "./components/videos/spring";
 import Django from "./components/videos/django";
 import React from "./components/videos/react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import { Navigation } from "./components/navigation";
 
 const App = () => {
   return (
     <div>
       <Navigation />
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />}/>
           <Route element={<Layout />}>
             <Route path="/beforeinstall" element={<Beforeinstall />} />
             <Route path="/create" element={<Create />} />
